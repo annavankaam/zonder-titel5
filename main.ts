@@ -32,26 +32,22 @@ basic.forever(function () {
     if (IR2 == links) {
         maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 50)
         maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 50)
-        basic.pause(700)
-        maqueen.motorStop(maqueen.Motors.All)
         basic.showLeds(`
             . . # . .
-            . # . . .
+            . . . # .
             # # # # #
-            . # . . .
+            . . . # .
             . . # . .
             `)
     }
     if (IR2 == rechts) {
         maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 50)
         maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 50)
-        basic.pause(700)
-        maqueen.motorStop(maqueen.Motors.All)
         basic.showLeds(`
             . . # . .
-            . . . # .
+            . # . . .
             # # # # #
-            . . . # .
+            . # . . .
             . . # . .
             `)
     }
